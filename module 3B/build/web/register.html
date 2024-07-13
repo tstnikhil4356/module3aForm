@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+  body {
+    background-color: #222;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"], input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+  input[type="submit"]:active, input[type="reset"]:active {
+    background-color: #3e8e41;
+  }
+  h2 {
+    text-align: center;
+  }
+</style>
+    </head>
+    <body>
+        <form action="register.jsp" method="post">
+    <h2>User Registration</h2>
+    <label for="username">Enter Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="password_confirm">Re-Enter Password:</label>
+    <input type="password" id="password_confirm" name="password_confirm" required>
+    
+    <label for="email">Enter Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="country">Enter Country Name:</label>
+    <input type="text" id="country" name="country" required>
+    
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
+    </body>
+</html>
